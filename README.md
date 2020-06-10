@@ -4,11 +4,13 @@
 
 ### General knowledge & credits
 
-- [taina0407](https://github.com/taina0407) For his hard work in putting OpenCore on the T480
+- [taina0407](https://github.com/taina0407) For orginal T480 OpenCore repo
 
-- [MSzturc](https://github.com/MSzturc) for his [ThinkPad Assistant](https://github.com/MSzturc/ThinkpadAssistant) software
+- [1Revenger1](https://github.com/1Revenger1) and [leo-labs](https://github.com/leo-labs) for [VoodooRMI](https://github.com/VoodooSMBus/VoodooRMI) and [VoodooSMBus](https://github.com/VoodooSMBus/VoodooSMBus)
 
-- [simprecicchiani](https://github.com/simprecicchiani) and [xma](https://github.com/xma) for their ThinkPad builds
+- [MSzturc](https://github.com/MSzturc) for [ThinkPad Assistant](https://github.com/MSzturc/ThinkpadAssistant)
+
+- [simprecicchiani](https://github.com/simprecicchiani) and [xma](https://github.com/xma) for inspirational ThinkPad builds
 
 - To install macOS follow the guides provided by [Dortania](https://dortania.github.io/getting-started/)
 
@@ -57,7 +59,9 @@
 | NVMeFix                | 1.0.3         |
 | USBInjectAll           | 0.7.1         |
 | VirtualSMC             | 1.1.4         |
-| VoodooPS2Controller    | 2.1.4         |
+| VoodooPS2Controller    | 2.1.5         |
+| VoodooRMI              | 1.0.0         |
+| VoodooSMBus            | 2.1.0         |
 | WhateverGreen          | 1.4.0         |
 
 ## UEFI Drivers
@@ -91,9 +95,9 @@
 
 - [x] Battery percentage
 
-- [x] TrackPoint  `Works perfectly. Just like on Windows or Linux`
+- [x] TrackPoint  `Works perfectly. Just like on Windows or Linux. Lower cursor speed or use previous release`
 
-- [x] TouchPad `Two and tree fingers swipe works. **Disable haptic feedback in touchpad settings**`
+- [x] TouchPad `1-5 fingers swipe works. Emulate force touch longer and more voluminous touch`
 
 - [x] Keyboard `Volume and brightness hotkeys. Another media keys with ThinkPad Assistant`
 
