@@ -34,14 +34,6 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Comment</key>
-				<string>SSDT-SBUS.aml</string>
-				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Comment</key>
 				<string>SSDT-SLEEP-PTSWAK.aml</string>
 				<key>Path</key>
 				<string>SSDT-SLEEP-PTSWAK.aml</string>

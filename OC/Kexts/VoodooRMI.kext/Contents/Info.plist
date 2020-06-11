@@ -17,13 +17,13 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.2</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>0.2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -44,10 +44,21 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.1Revenger1.VoodooRMI</string>
+			<key>Configuration</key>
+			<dict>
+				<key>DisableWhileTypingTimeout</key>
+				<integer>500</integer>
+				<key>TrackstickMultiplier</key>
+				<integer>1</integer>
+				<key>TrackstickScrollMultiplierX</key>
+				<integer>1</integer>
+				<key>TrackstickScrollMultiplierY</key>
+				<integer>1</integer>
+			</dict>
 			<key>IOClass</key>
 			<string>RMIBus</string>
 			<key>IOProbeScore</key>
-			<integer>500</integer>
+			<integer>2910</integer>
 			<key>IOProviderClass</key>
 			<string>RMISMBus</string>
 		</dict>

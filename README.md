@@ -60,7 +60,7 @@
 | USBInjectAll           | 0.7.1         |
 | VirtualSMC             | 1.1.4         |
 | VoodooPS2Controller    | 2.1.5         |
-| VoodooRMI              | 1.0.0         |
+| VoodooRMI              | 0.2.0         |
 | VoodooSMBus            | 2.1.0         |
 | WhateverGreen          | 1.4.0         |
 
