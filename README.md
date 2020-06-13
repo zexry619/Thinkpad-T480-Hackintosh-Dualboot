@@ -59,8 +59,9 @@
 | NVMeFix                | 1.0.3         |
 | USBInjectAll           | 0.7.1         |
 | VirtualSMC             | 1.1.4         |
+| VoltageShift           | 1.22          |
 | VoodooPS2Controller    | 2.1.5         |
-| VoodooRMI              | 0.2.0         |
+| VoodooRMI              | 0.3.0         |
 | VoodooSMBus            | 2.1.0         |
 | WhateverGreen          | 1.4.0         |
 
@@ -113,13 +114,13 @@
 
 - [x] Perfomance `Now on par with Windows without XTU undervolt.`
 
+- [x] Sleep/Wake `Does not work when booting over USB`
+
 ## What's not working ⚠️
 
 - [ ] Sidecar wireless
 
 - [ ] Fingerprint reader
-
-- [ ] Sleep/Wake `Investigating. It works for some, not for others.`
 
 - [ ] PM 981
 
