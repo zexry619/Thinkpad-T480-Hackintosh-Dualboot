@@ -1,9 +1,8 @@
 # T480-OpenCore-Hackintosh
 
-**Status: Unmaintained**
+**Status: Testing And Maintaining**
 
-Sorry, I no longer use macOS on my T480. If a maintained fork is formed, it will be listed here
-
+This EFI configuration is taken from: https://github.com/EETagent/T480-OpenCore-Hackintosh
 
 <img align="right" src="./Other/README_Resources/ThinkPad.gif" alt="T480 macOS" width="430">
 
@@ -40,10 +39,10 @@ If you find this bootloader configuration useful, consider giving it a star to m
 [![UEFI](https://img.shields.io/badge/UEFI-N24ET61W-lightgrey)](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t480-type-20l5-20l6/downloads/ds502355)
 | Category  | Component                            | Note                                                                                                               |
 | --------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| CPU       | Intel Core i5-8250U                  | 20L50000MC                                                                                                         |
+| CPU       | Intel Core i5-8350U                  | 20L50000MC                                                                                                         |
 | GPU       | Intel UHD 620                        |                                                                                                                    |
-| SSD       | Samsung 970 Evo 512GB                | Replaced cursed PM 981 which stil doesn't work reliably                                                            |
-| Memory    | 12GB DDR4 2400Mhz                    |                                                                                                                    |
+| SSD       | SKHynix Nvme SSD 2242(WWAN SLOT)     | 256GB                                                            |
+| Memory    | 8GB DDR4 2400Mhz                    |                                                                                                                    |
 | Battery   | Dual battery                         |                                                                                                                    |
 | Camera    | 720p Camera                          |                                                                                                                    |
 | Wifi & BT | Intel Wireless-AC 8265               | Use AirportItlwm for your macOS version and enjoy native Wi-Fi control, or use Heliport app.                        |
@@ -58,8 +57,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Component      | Version        |
 | -------------- | -------------- |
-| macOS Catalina | 10.15.7 (19H2) |
-| macOS Big Sur  | 11.2.2 (20D80) |
+| macOS Big Sur  | 11.6.4         |
 | OpenCore       | v0.6.9         |
 
 </details>
