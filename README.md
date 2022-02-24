@@ -4,6 +4,8 @@
 
 This EFI configuration is taken from: https://github.com/EETagent/T480-OpenCore-Hackintosh
 
+I'm still in the learning stage on hackintosh. So this EFI may not be perfect!
+
 <img align="right" src="./Other/README_Resources/ThinkPad.gif" alt="T480 macOS" width="430">
 
 **DISCLAIMER:**
@@ -53,7 +55,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 | Component      | Version        |
 | -------------- | -------------- |
 | macOS Big Sur  | 11.6.4         |
-| OpenCore       | v0.6.9         |
+| OpenCore       | v0.7.9         |
 
 </details>
 
@@ -64,27 +66,27 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| AirportItlwm           | 1.3.0          |
-| AppleALC               | 1.6.0          |
-| BrightnessKeys         | 1.0.1          |
+| AirportItlwm           | 2.1.0          |
+| AppleALC               | 1.7.0          |
+| BrightnessKeys         | 1.2.5          |
 | CPUFriend              | 1.2.3          |
-| CPUFriendDataProvider  | i5-8250U       |
-| HibernationFixup       | 1.4.0          |
+| CPUFriendDataProvider  | i5-8350U       |
+| HibernationFixup       | 1.4.6          |
 | HoRNDIS                | Disabled, 9.2  |
-| IntelBluetoothFirmware | 1.1.2          |
-| IntelBluetoothInjector | 1.1.2          |
-| IntelMausi             | 1.0.6          |
-| Lilu                   | 1.5.3          |
+| IntelBluetoothFirmware | 2.1.0          |
+| IntelBluetoothInjector | 2.1.0          |
+| IntelMausi             | 1.0.8          |
+| Lilu                   | 1.6.1          |
 | NoTouchID              | 1.0.4          |
-| NVMeFix                | 1.0.7          |
+| NVMeFix                | 1.0.9          |
 | RTCMemoryFixup         | 1.0.8          |
-| VirtualSMC             | 1.2.3          |
+| VirtualSMC             | 1.2.9          |
 | VoltageShift           | Disabled, 1.22 |
-| VoodooPS2Controller    | 2.2.3          |
-| VoodooRMI              | 1.3.3          |
+| VoodooPS2Controller    | 2.2.8          |
+| VoodooRMI              | 1.3.5          |
 | VoodooSMBus            | 3.0.0          |
-| WhateverGreen          | 1.4.9          |
-| YogaSMC                | 1.4.3          |
+| WhateverGreen          | 1.5.8          |
+| YogaSMC                | 1.5.1          |
 
 </details>
 <details>
@@ -94,18 +96,17 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Driver          | Version           |
 |:---------------:| ----------------- |
-| AudioDxe.efi    | OpenCorePkg 0.6.9 |
+| AudioDxe.efi    | OpenCorePkg 0.7.9 |
 | HfsPlus.efi     | OcBinaryData      |
-| OpenCanopy.efi  | OpenCorePkg 0.6.9 |
-| OpenRuntime.efi | OpenCorePkg 0.6.9 |
+| OpenCanopy.efi  | OpenCorePkg 0.7.9 |
+| OpenRuntime.efi | OpenCorePkg 0.7.9 |
 </details>
 
 <details>
     <summary><strong>Neofetch screenshots</strong></summary>
     <br>
     <p float="left">
-        <img src="./Other/README_Resources/Neofetch-Catalina.png" alt="Neofetch Catalina" width="350">
-        <img src="./Other/README_Resources/Neofetch-BigSur.png" alt="Neofetch Catalina" width="350">
+        <img src="./Other/README_Resources/Screen Shot 2022-02-25 at 01.46.21.png" alt="Neofetch Catalina" width="350">
     </p>
 </details> 
 
@@ -197,7 +198,22 @@ etc.
 </details>
 
 ## Post-Install
+<details> 
+<summary><strong>Fix Audio Distortion After Sleep</strong></summary>
+<br>
+If your Audio has an error or the sound decreases after sleeping in battery mode. Install ALCPlugFix in other folder. If not, leave this step!
 
+```
+cd /other/AlcPlugFix
+sudo ./install.sh
+
+```
+</details> 
+<details> 
+<summary><strong>Change Folder EFI Windows</strong></summary>
+<br>
+Copy all the contents of the "Microsoft" folder in the Windows EFI Folder to your Hackintosh EFI Folder for you to be able to boot normally (dualboot) via reFInd.
+</details> 
 <details>  
 
 <summary><strong>Colour banding</strong></summary>
@@ -325,6 +341,9 @@ Problems with recreating new `en` device every time are now solved on latest mac
 - [x] Wifi - Intel Wireless-AC 8265 `Use HeliPort app for Wi-Fi control`
 
 - [x] DRM `Widevine, validated on Firefox 82. WhateverGreen's DRM is broken on Big Sur`
+    
+- [x] Dualboot Windows `Working With reFInd`
+
 
 </details>  
 
@@ -338,7 +357,7 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [ ] Sidecar wireless `If you want to use this feature, buy a compatible Broadcom card!`
 
-- [ ] Windows/Linux from OC boot menu `It's best practice to not boot from OC when planning to perform firmware upgrade`
+- [ ] Windows/Linux from OC boot menu `Solved with reFInd`
 
 
 </details>  
