@@ -206,7 +206,6 @@ If your Audio has an error or the sound decreases after sleeping in battery mode
 ```
 cd /other/AlcPlugFix
 sudo ./install.sh
-
 ```
 </details> 
 <details> 
